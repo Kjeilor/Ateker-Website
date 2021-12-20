@@ -1,0 +1,102 @@
+.hero{
+
+    @include breakpoint-up(large){
+        max-width: 62.5rem;
+        margin: auto;
+    }
+    
+    &__image{
+        position: relative;
+        top: 5.625rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 33rem;
+        border-radius: 0.3125rem;
+        box-shadow: 0 1px 5px rgba(0,0,0,0.2);
+        transform: translateX(15%);
+
+        @include breakpoint-up(large){
+            flex:1;
+            order: 2;
+        }
+    }
+
+    &__content{
+        display: flex;
+    }
+    &__text{
+        margin-top: 5.625rem;
+        min-width: 450px;
+        h1{
+            font-size: 4rem; //2rem
+            font-weight: 600;
+            color: $ash;
+            line-height: 1.1;
+            padding-top: 0.625rem;
+        }
+
+        p{
+            font-size: 1.25rem;
+            font-weight: 500;
+            color: $white;
+            line-height: 1.1;
+            padding-top: 0.625rem;
+            padding-bottom: 0.625rem;
+        }
+
+    }
+
+    &__hbtn{
+        padding: 0.3125rem 1.375rem;
+        border: none;
+        border-radius: 1.375rem;
+        color: $white;
+        font-weight: 600;
+        background-color: $glaceite;
+        margin-left: -1.25rem;
+        position: relative;
+        &:hover{
+            background-color: $magnetite;
+        }
+    }
+
+    &__gradient{
+        position: absolute;
+        top: 0;
+        left:0;
+        z-index: -10000;
+
+        @include breakpoint-up(large){
+          flex: 1;
+        }
+        @media (min-width: 100px) {
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+        }
+
+        @media (min-width: 300px) {
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+        }
+        @media (min-width: 450px) {
+            width: 100%;
+            height: 450px;
+            overflow: hidden;
+        }
+
+        @media (min-width: 1000px) {
+            width: 100%;
+            height: 600px;
+            overflow: hidden;
+        }
+
+        @media (min-width: 90rem) {
+            width: 100%;
+            height: 43.75rem;
+            overflow: hidden;
+        }
+    }
+    
+}
