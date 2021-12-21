@@ -327,10 +327,6 @@ canvas {
   margin-bottom: 0.9375rem;
 }
 
-.header .prod-item :first-child {
-  margin-top: "";
-}
-
 .header .item {
   -webkit-transition: all opacity 300ms ease-in-out;
   transition: all opacity 300ms ease-in-out;
