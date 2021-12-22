@@ -292,7 +292,7 @@ canvas {
   text-align: left;
   height: 255px;
   border-radius: 5px;
-  top: 32px;
+  top: 30px;
   -webkit-transform: translateX(-175px);
           transform: translateX(-175px);
   padding-top: 1.25rem;
@@ -365,7 +365,7 @@ canvas {
   text-align: left;
   height: 12.5rem;
   border-radius: 5px;
-  top: 32px;
+  top: 30px;
   -webkit-transform: translateX(-50px);
           transform: translateX(-50px);
   padding: 1.25rem;
