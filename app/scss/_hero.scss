@@ -1,49 +1,103 @@
 .hero{
-
-    @include breakpoint-up(large){
-        max-width: 62.5rem;
-        margin: auto;
+    @include breakpoint-up (large){
+       display: flex;
     }
-    
-    &__image{
-        position: relative;
-        top: 5.625rem;
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 33rem;
-        border-radius: 0.3125rem;
-        box-shadow: 0 1px 5px rgba(0,0,0,0.2);
-        transform: translateX(15%);
 
-        @include breakpoint-up(large){
-            flex:1;
-            order: 2;
+    max-width: 62.5rem;
+    max-height: 37.5rem;
+    margin: auto;
+
+    &__gradient{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: -10000;
+
+        @include breakpoint-up (medium){
+            height: 70%;
         }
+
+        @include breakpoint-down (large){
+            height: 50%;
+        }
+
+        @include breakpoint-down (medium){
+            height: 65%;
+        }
+
+        @include breakpoint-down (small){
+            height: 100%;
+        }
+
+        @include breakpoint-down (micro){
+            height: 125%;
+        }
+
     }
 
-    &__content{
-        display: flex;
-    }
+
+    //&__image{
+       
+    //}
+
     &__text{
-        margin-top: 5.625rem;
-        min-width: 450px;
+        @include breakpoint-up (large){
+            flex: 1;
+        }
+
+        width: 100%;
+        min-width: 15.625rem;
+        max-width: 28.125rem;
+
         h1{
-            font-size: 4rem; //2rem
             font-weight: 600;
             color: $ash;
-            line-height: 1.1;
-            padding-top: 0.625rem;
+            line-height: 1;
         }
 
         p{
-            font-size: 1.25rem;
-            font-weight: 500;
+            font-weight: 300;
             color: $white;
-            line-height: 1.1;
-            padding-top: 0.625rem;
-            padding-bottom: 0.625rem;
+            line-height: 1.3;
         }
 
+        @include breakpoint-up (medium){
+            h1{
+                font-size: calc(2vw + 2.25rem);
+            }
+            p{
+                font-size: calc(.5vw + 1.5rem); 
+            }
+        }
+
+        @include breakpoint-down (large){
+            h1{
+                font-size: calc(2vw + 2.25rem);
+            }
+            p{
+                font-size: calc(.5vw + 1.5rem); 
+            }
+        }
+
+        @include breakpoint-down (medium){
+            h1{
+                font-size: calc(2vw + 3rem);
+            }
+            p{
+                font-size: calc(.5vw + 1.5rem); 
+            }
+        }
+
+        @include breakpoint-down (small){
+            padding-top: calc(1vw + .75rem);
+            h1{
+                font-size: calc(1vw + 2.25rem);
+            }
+            p{
+                font-size: calc(.5vw + 1rem); 
+            }
+        }
     }
 
     &__hbtn{
@@ -52,51 +106,14 @@
         border-radius: 1.375rem;
         color: $white;
         font-weight: 600;
+        font-size: calc(.5vw + .65rem);
         background-color: $glaceite;
         margin-left: -1.25rem;
         position: relative;
         &:hover{
-            background-color: $magnetite;
+          background-color: $magnetite;
         }
     }
 
-    &__gradient{
-        position: absolute;
-        top: 0;
-        left:0;
-        z-index: -10000;
-
-        @include breakpoint-up(large){
-          flex: 1;
-        }
-        @media (min-width: 100px) {
-            width: 100%;
-            height: 300px;
-            overflow: hidden;
-        }
-
-        @media (min-width: 300px) {
-            width: 100%;
-            height: 400px;
-            overflow: hidden;
-        }
-        @media (min-width: 450px) {
-            width: 100%;
-            height: 450px;
-            overflow: hidden;
-        }
-
-        @media (min-width: 1000px) {
-            width: 100%;
-            height: 600px;
-            overflow: hidden;
-        }
-
-        @media (min-width: 90rem) {
-            width: 100%;
-            height: 43.75rem;
-            overflow: hidden;
-        }
-    }
     
 }

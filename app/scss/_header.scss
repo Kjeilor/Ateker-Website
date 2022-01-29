@@ -50,13 +50,15 @@
         .header__toggle{
             >bar:first-child{
                transform: rotate(45deg);
-               
+
             }
             >bar:nth-child(2){
                opacity: 0;
+               
             }
             >bar:last-child{
                transform: rotate(-45deg);
+               
             }
         }
 
@@ -257,15 +259,15 @@
         }
         .products{
             list-style: none;
-            margin-bottom: -10px;
-            columns: calc(1);
-            column-gap: 0px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(12.1875rem, 1fr));
+            margin-bottom: 10px;
         }
         .company{
             list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(12.1875rem, 1fr));
             margin-bottom: 10px;
-            columns: 1;
-            column-gap: -0px;
         }
 
     }
