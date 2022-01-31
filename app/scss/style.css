@@ -524,6 +524,7 @@ canvas {
 }
 
 .hero {
+  width: 100%;
   max-width: 62.5rem;
   max-height: 37.5rem;
   margin: auto;
@@ -547,19 +548,19 @@ canvas {
 
 @media (min-width: 40em) {
   .hero__gradient {
-    height: 70%;
+    height: 100%;
   }
 }
 
 @media (max-width: 87.4375em) {
   .hero__gradient {
-    height: 50%;
+    height: 100%;
   }
 }
 
 @media (max-width: 63.9375em) {
   .hero__gradient {
-    height: 65%;
+    height: 100%;
   }
 }
 
@@ -578,7 +579,7 @@ canvas {
 .hero__text {
   width: 100%;
   min-width: 15.625rem;
-  max-width: 28.125rem;
+  max-width: 29.125rem;
 }
 
 @media (min-width: 64em) {
@@ -606,7 +607,7 @@ canvas {
     font-size: calc(2vw + 2.25rem);
   }
   .hero__text p {
-    font-size: calc(.5vw + 1.5rem);
+    font-size: calc(.5vw + 1rem);
   }
 }
 
@@ -615,23 +616,20 @@ canvas {
     font-size: calc(2vw + 2.25rem);
   }
   .hero__text p {
-    font-size: calc(.5vw + 1.5rem);
+    font-size: calc(.5vw + 1rem);
   }
 }
 
 @media (max-width: 63.9375em) {
   .hero__text h1 {
-    font-size: calc(2vw + 3rem);
+    font-size: calc(2vw + 2.25rem);
   }
   .hero__text p {
-    font-size: calc(.5vw + 1.5rem);
+    font-size: calc(.5vw + 1rem);
   }
 }
 
 @media (max-width: 39.9375em) {
-  .hero__text {
-    padding-top: calc(1vw + .75rem);
-  }
   .hero__text h1 {
     font-size: calc(1vw + 2.25rem);
   }
