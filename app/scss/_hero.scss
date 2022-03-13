@@ -3,11 +3,6 @@
     max-width: 62rem;
     margin: auto;
     overflow: visible;
-
-    @include breakpoint-up (large){
-       // display: flex;
-        
-    }
     
     .hro-cont{
         width: 100vw;
