@@ -22,7 +22,7 @@
             padding: .5rem;
             margin-left: auto;
             margin-right: auto;
-        
+            padding-left: 3rem;
         }
     
         .ttl{
@@ -42,6 +42,11 @@
 
             &:hover{
                 color: #29ab87;
+            }
+
+            svg{
+                height: calc(.5vw + .75rem);
+
             }
 
         }
