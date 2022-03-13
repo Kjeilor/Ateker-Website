@@ -13,7 +13,7 @@ const R = function (x, y, time) {
 
 const G = function (x, y, time) {
   return Math.floor(
-    160 +
+    170 +
       64 *
         Math.sin(
           (x * x * Math.cos(time / 4) + y * y * Math.sin(time / 3)) / 300
@@ -23,7 +23,7 @@ const G = function (x, y, time) {
 
 const B = function (x, y, time) {
   return Math.floor(
-    180 +
+    170 +
       64 *
         Math.sin(
           5 * Math.sin(time / 9) +
@@ -38,7 +38,7 @@ const startAnimation = function () {
       color(x, y, R(x, y, time), G(x, y, time), B(x, y, time));
     }
   }
-  time = time + 0.03;
+  time = time + 0.015;
   window.requestAnimationFrame(startAnimation);
 };
 
@@ -70,6 +70,8 @@ btnHamburger.addEventListener('click', function(){
     });
   }  
 });
+
+
 
 
 

@@ -1,8 +1,6 @@
 .header{
-    position: relative;
     z-index: 1;
     
-    //Navigation container
     nav {
         display: flex;
         max-width: 62.5rem;
@@ -247,6 +245,7 @@
         transition: 300ms ease-in-out;
         opacity: 0;
         visibility: hidden;
+        z-index: 100;
     
 
         .menu-heading{
