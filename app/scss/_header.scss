@@ -11,16 +11,9 @@
     }
     
     //LOGO
-    &__logo{
-        svg{
-            display: flex;
-            width: 90px; 
-            height: 20px; 
-            transition: opacity 300ms ease-in-out;
-        }
-
+    .logo{ 
         &:hover{
-         opacity: 0.75;
+            opacity: 0.75;
         }
     }
     
@@ -83,20 +76,19 @@
 
     //Product menu
     .prod-menu{
-       position: absolute;
-       background-color: $white;
-       column-count: 2;
-       column-gap: 50px;
-       list-style: none;
-       text-align: left;
-       height: 255px;
-       border-radius: 5px;
-       top: 30px;
-       transform: translateX(-175px);
-       padding-top: 1.25rem;
-       box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-       opacity: 0;
-       visibility: hidden;
+        position: absolute;
+        background-color: $white;
+        list-style: none;
+        text-align: left;
+        width: fit-content;
+        border-radius: 5px;
+        top: 10px;
+        padding: 1rem;
+        margin: 1rem;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        transform: translateX(-225px);
+        opacity: 0;
+        visibility: hidden;
        
     }
 
@@ -115,37 +107,70 @@
 
     }
 
-    .prod-item {
-        display: inline-flex;
+    
+
+    .prd-grd{
+        display: grid;
+        grid-template-columns: repeat(2, 14rem);
         align-items: center;
-        margin-bottom: 0.9375rem;
+        width: 100%;
+        gap: 1.5rem;
+        padding: 1rem;
+        margin: 0;
+
     }
 
-    .item{
-        transition: all opacity 300ms ease-in-out;
-        :hover , :focus{
-           opacity: 0.6;
-        }
+    .prod-item {
+        padding: .125rem;
+
     }
 
-    .prod-text{
-        text-align: left;
-        margin-left: 10px;
-
-        .prod-name{
-            color: $junglegreen;
+    .prod-txt{
+        color: #808080;
+        font-weight: 500;
+        font-size: calc(.5vw + .6rem);
+        width: 100%;
+        
+        
+        .sub-txt{
+            color: #80808099;
             font-weight: 500;
-            margin-bottom: -10px;
-            word-wrap: normal;
-            width: 155px;
+            font-size: calc(.25vw + .6rem);
+            border: 0;
+            padding: 0;
+            margin: 0;
+            margin-top: .25rem;
+            width: 100%;
         }
-        .subtext{
-            font-size: 12px;
-            color: $graphite;
-            font-weight: 400;
-            word-wrap: normal;
-            line-height: 10px;
-            width: 145px;
+    }
+
+    .prods{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        gap: 1rem;
+        padding: .5rem;
+        border-radius: 5px;
+
+        .icn{
+            fill: 808080;
+        }
+
+        .elms-b__icn{
+            height: calc(.25vw + .5rem);
+        }
+
+        &:hover{
+            background: #29ab8740;
+            .prod-txt{
+                color: #29ab87;
+            }
+            .sub-txt{
+                color: #29ab87;
+            }
+            #icn{
+                fill: #29ab87;
+            }
         }
     }
 
@@ -154,12 +179,12 @@
         position: absolute;
         background-color: $white;
         list-style: none;
-        text-align: left;
-        height: 12.5rem;
+        width: fit-content;
         border-radius: 5px;
-        top: 30px;
-        transform: translateX(-50px);
-        padding: 1.25rem;
+        top: 10px;
+        transform: translateX(-80px);
+        padding: 1.5rem;
+        margin: 1rem;
         box-shadow: 0 2px 5px rgba(0,0,0,0.2);
         opacity: 0;
         visibility: hidden;
@@ -181,31 +206,37 @@
     }
  
     .comp-item {
-        display: inline-flex;
-        align-items: center;
-        margin-bottom: 0.9375rem;
+        padding: .25rem;
+        
     }
  
     .item{
-        transition: all opacity 300ms ease-in-out;
-        :hover , :focus{
-        opacity: 0.6;
-        }
-    }
- 
-    .comp-text{
+        display: flex;
+        align-items: center;
         text-align: left;
-        margin-left: 10px;
-        word-wrap: normal;
-        width: 155px;
-        line-height: normal;
-        
-        .comp-name{
-            color: $junglegreen;
-            font-weight: 500;
+        gap: .5rem;
+        color: #808080;
+        width: 100%;
+        padding: .5rem;
+        border-radius: 5px;
+        font-size: calc(.25vw + .7rem);
+        font-weight: 500;
+
+        &:hover{
+            background: #29ab8740;
+            color: #29ab87;
+
+            #icn{
+                fill: #29ab87;
+            }
         }
+
+        .elms-b__icn{
+            height: calc(.25vw + .5rem);
+        }
+
     }
-         
+
     
     //CTA button
     &__cta{
