@@ -567,7 +567,7 @@ canvas {
   top: 60px;
   padding: 20px;
   border-radius: 5px;
-  width: calc(100% - 2rem);
+  width: calc(100% - 2.5rem);
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
