@@ -454,7 +454,7 @@ canvas {
 }
 
 .header .prods:hover {
-  background: #29ab8740;
+  background: #29ab8733;
 }
 
 .header .prods:hover .prod-txt {
@@ -525,7 +525,7 @@ canvas {
 }
 
 .header .item:hover {
-  background: #29ab8740;
+  background: #29ab8733;
   color: #29ab87;
 }
 

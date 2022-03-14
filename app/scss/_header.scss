@@ -77,7 +77,7 @@
     //Product menu
     .prod-menu{
         position: absolute;
-        background-color: $white;
+        background-color: #ffffff;
         list-style: none;
         text-align: left;
         width: fit-content;
@@ -161,7 +161,7 @@
         }
 
         &:hover{
-            background: #29ab8740;
+            background: #29ab8733;
             .prod-txt{
                 color: #29ab87;
             }
@@ -223,7 +223,7 @@
         font-weight: 500;
 
         &:hover{
-            background: #29ab8740;
+            background: #29ab8733;
             color: #29ab87;
 
             #icn{
@@ -327,6 +327,7 @@
         color: $junglegreen;
         margin-left: 1.25rem;
         transition: 300ms all ease-in-out;
+        
 
         &:hover{
             color: #135744;
