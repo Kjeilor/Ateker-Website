@@ -107,8 +107,6 @@
 
     }
 
-    
-
     .prd-grd{
         display: grid;
         grid-template-columns: repeat(2, 14rem);
@@ -269,7 +267,7 @@
         top: 60px;
         padding: 20px;
         border-radius: 5px;
-        width: calc(100% - 2.5rem);
+        width: calc(100% - 3rem);
         left: 50%;
         transform: translateX(-50%);
         box-shadow: 0 2px 5px rgba(0,0,0,0.2);
@@ -291,13 +289,34 @@
             list-style: none;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(12.1875rem, 1fr));
-            margin-bottom: 10px;
+            gap: .5rem;
         }
         .company{
             list-style: none;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(12.1875rem, 1fr));
-            margin-bottom: 10px;
+            gap: .5rem;
+            
+        }
+
+    }
+
+    //Mobile menu Pricing Button
+
+    .prc-btn{
+        background: #29ab87;
+        
+        .prc-lnk{
+            position: relative;
+            font-size: calc(.25vw + .7rem);
+            font-weight: 600;
+            color: #ffffff;
+            transition: 300ms all ease-in-out;
+        
+        }
+        &:hover {
+            color: #ffffff;
+            background-color: #135744;
         }
 
     }
@@ -305,33 +324,18 @@
     //Mobile menu CTA
     .menucta{//Menu CTA button
         padding: 5px 22px;
-        font-size: $font-sm;
+        font-size: calc(.25vw + .7rem);
         background-color: $junglegreen;
         font-weight: 600;
         transition: 300ms ease-in-out;
-        margin-top: 1.25rem;
-        margin-left: 1.25rem;
-        margin-bottom:1.25rem;
+      
 
         &:hover{
             color: white;
             background-color: #135744;
         }
     }
-    
-    //Mobile menu Pricing link
-    .pricing-link{
-        position: relative;
-        font-size: $font-lg;
-        font-weight: 600;
-        color: $junglegreen;
-        margin-left: 1.25rem;
-        transition: 300ms all ease-in-out;
-        
 
-        &:hover{
-            color: #135744;
-        }
-    }
+    
   
 }

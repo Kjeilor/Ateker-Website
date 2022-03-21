@@ -79,7 +79,7 @@ button,
     margin-bottom: -1.625rem;
     text-shadow: 0 0.0625rem 0.3125rem rgba(0,0,0,0.15);
     text-decoration: none;
-    transition: all 300ms ease-in-out;
+    
     &:hover{
         color: $graphite;
     }
@@ -90,7 +90,6 @@ button,
     color: $white;
     text-shadow: 0 1px 5px rgba(0,0,0,0.15);
     text-decoration: none;
-    transition: all 300ms ease-in-out;
 
     &:hover{
         color: $graphite;
@@ -138,7 +137,7 @@ canvas {
 .scn-1{
     top: 0;
     width: 100%;
-    height: 300px;
+    height: 350px;
     position: relative;
     background-color: white;
     z-index: 1;
@@ -146,22 +145,23 @@ canvas {
 }
 
 .scn-2{
-    top: 0;
+    top: 0px;
     width: 100%;
-    height: 2250px;
+    height: fit-content;
     position: relative;
     background: white;
-    background: linear-gradient(0deg, #262626 10%,#ffffff 100%);
+    background: linear-gradient(0deg, #dcdcdc 10%,#ffffff 100%);
     z-index: 1;
+    overflow-x: hidden;
 
 }
 
 .scn-3{
     top: 0;
     width: 100%;
-    height: 900px;
+    height: fit-content;
     position: relative;
-    background-color: #262626;
+    background-color: #ffffff;
     z-index: 1;
     
 }
@@ -171,36 +171,17 @@ canvas {
     width: 100%;
     height: 750px;
     position: relative;
-    background-color: white;
+    background-color: #dcdcdc;
     z-index: 1;
     
 }
 
-.scn-5{
-    top: 0;
-    background-color: #262626;
-    width: 100%;
-    height: fit-content;
-    z-index: 1;
-    overflow-x: hidden;
-    
-}
-
-.scn-6{
-    top: 0;
-    width: 100%;
-    height: 800px;
-    position: relative;
-    background-color: white;
-    z-index: 1;
-
-}
 
 .ftr{
     top: 0;
     width: 100%;
     height: fit-content;
-    background-color: #F7FFE9;
+    background-color: #262626;
     z-index: 1;
 
 }

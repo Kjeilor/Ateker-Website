@@ -1,23 +1,88 @@
 .scn-2{
+    .s2-txt{
+        display: flex;
+        flex-direction: column;
+        max-width: 62rem;
+        margin: auto;
+    
+    }
+
     .sb-hdng{
-        color: #6DD400;
+        color: #29ab87;
         font-size: calc(.25vw + .8rem);
     }
 
     .hdng{
-        color: #000000;
-        font-size: calc(.25vw + 1.6rem);
+        color: #262626;
+        font-size: calc(.75vw + 1.25rem);
+        max-width: 35rem;
+        
     }
 
-    .cpy{
-        color: #000000;
-        font-size: calc(.25vw + 1rem);
+    .s2-cpy{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(17rem, 28rem));
+        height: fit-content;
+        gap: 2rem;
+        line-height: 1.5;
+        width: calc(100%);
 
+        .s2-cpy-1{
+            color: #808080;
+            font-size: calc(.25vw + 1rem);
+            
 
-        .hlt{
-            color: #6DD400;
-
+            .hlt{
+                color: #29ab87;
+    
+            }
         }
+
+        .s2-cpy-2{
+            color: #808080;
+            font-size: calc(.25vw + 1rem);
+            
+            .hlt{
+                color: #29ab87;
+    
+            }
+        }
+    }
+
+    .s2-cta{
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+
+        .s2cta{
+            background: $magnetite;
+            color: #ffffff;
+            cursor: pointer;
+
+            &:hover{
+                background-color: #29ab87;
+            }
+        }
+    }
+
+    .prd-img{
+        height: auto;
+        max-width: 85rem;
+        min-width: 25rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        margin-left: -1rem;
+
+    }
+
+    .prd-img-sm-wrpr{
+        padding: 0;
+    }
+    .prd-img-sm{
+        width: calc(100%);
+        height: auto;
+        max-width: 60rem;
+        margin: 0rem;
+
     }
 
 }
