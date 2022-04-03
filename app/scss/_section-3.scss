@@ -4,6 +4,7 @@
         flex-direction: column;
         max-width: 62rem;
         margin: auto;
+        padding-bottom: 5rem;
     
     }
 
@@ -18,63 +19,48 @@
         max-width: 35rem;
     }
 
-    .sb-hdng-2{
-        color: #262626;
-        font-size: calc(.25vw + .8rem);
-    }
 
-    .s3-cpy{
+
+    .s3-cpy-main{
         height: fit-content;
-        gap: 1rem;
-        line-height: 1.5;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
         width: calc(100%);
-        padding-top: 5rem;
-        padding-bottom:  5rem;
-        margin: auto;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 2.25rem;
+       
     }
 
     .cpy-cntr{
         display: flex;
-        flex-direction: row;
-        gap: 5rem;
-        margin: auto;
-        width: 50rem;
-        align-items: center;
+        flex-direction: column;
+        gap: 1rem;
         padding-top: 3rem;
 
         .cpy-txt{
-            max-width: 20rem;
+            width: fit-content;
         }
     }
 
 
-    .cpy-icn-1{
+    .cpy-icn{
         height: fit-content;
         width: fit-content;
-        background-color: #87ceeb40;
-        border-radius: 30% 50% 20% 40%;
-  	    animation: transform 20s ease-in-out infinite both alternate,movement_one 40s ease-in-out infinite both;
-    }
-    
-    .cpy-icn-2{
-        border-radius: 50%;
-        height: fit-content;
-        width: fit-content;
-        background-color: #FF4F0340;
+        
     }
 
-    .cpy-icn-3{
-        border-radius: 50%;
-        height: fit-content;
-        width: fit-content;
-        background-color: #6236FF40;
+    .sb-hdng-1{
+        color: #262626;
+        font-weight: 600;
+        font-size: calc(.35vw + .75rem);
+        border: none;
+        margin: 0 0 .5rem 0;
     }
 
-    .cpy-icn-4{
-        border-radius: 50%;
-        height: fit-content;
-        width: fit-content;
-        background-color: #29ab8740;
-
+    .s3-cpy{
+        color: #808080;
+        font-size: calc(.25vw + .75rem);
+        margin: 0;
     }
 }

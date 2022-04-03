@@ -1,5 +1,5 @@
-.scn-4{
-    .s4-txt{
+.scn-5{
+    .s5-txt{
         display: flex;
         flex-direction: column;
         max-width: 62rem;
@@ -9,22 +9,13 @@
     }
 
     .sb-hdng{
-        color: #29ab87;
+        color: #F7B500;
         font-size: calc(.25vw + .8rem);
     }
 
     .hdng{
         color: #262626;
-        font-size: calc(.75vw + 1.25rem);
+        font-size: calc(.25vw + 1.6rem);
     }
 
-    .s4-cpy{
-        color: #808080;
-        font-size: calc(.25vw + 1rem);
-            
-        .hlt{
-            color: #29ab87;
-    
-        }
-    }
 }

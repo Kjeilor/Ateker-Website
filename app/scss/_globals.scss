@@ -74,7 +74,7 @@ button,
     background: none;
     cursor: default;
     color: $white;
-    font-size: $font-sm;
+    font-size: $font-med;
     margin-top: -1.625rem;
     margin-bottom: -1.625rem;
     text-shadow: 0 0.0625rem 0.3125rem rgba(0,0,0,0.15);
@@ -167,6 +167,16 @@ canvas {
 }
 
 .scn-4{
+    top: 0;
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    background: #ffffff;
+    z-index: 1;
+    
+}
+
+.scn-5{
     top: 0;
     width: 100%;
     height: 750px;
