@@ -1,30 +1,171 @@
 .scn-4{
-    .s4-txt{
+    display: flex;
+    max-width: 62rem;
+    margin: auto;
+
+    .s4-cont{
+        width: 62rem;
         display: flex;
         flex-direction: column;
-        max-width: 62rem;
+        flex: 1 1 1 0%;
         margin: auto;
-        padding-bottom: 5rem;
-    
-    }
 
-    .sb-hdng{
-        color: #29ab87;
-        font-size: calc(.25vw + .8rem);
-    }
-
-    .hdng{
-        color: #262626;
-        font-size: calc(.75vw + 1.25rem);
-    }
-
-    .s4-cpy{
-        color: #808080;
-        font-size: calc(.25vw + 1rem);
+        .s4-hdr{
+            .hdr-sb-hdng{
+                color: #29ab87;
+                font-size: calc(.25vw + .8rem);
+            }
+        
+            .hdr-hdng{
+                color: #262626;
+                font-size: calc(.75vw + 1.25rem);
+            }
+        
+            .hdr-txt{
+                color: #808080;
+                font-size: calc(.25vw + 1rem);
+                    
+                .hlt{
+                    color: #29ab87;
             
-        .hlt{
-            color: #29ab87;
+                }
+            }
+        }
+
+        .s4-dsp-1{
+            display: flex;
+            width: 100vw;
+            align-items: center;
+            gap: 2rem;
+            
+            .s4-img-1{
+                height: auto;
+                max-width: 22rem;
+                min-width: 35rem;
+                padding-top: 3rem;
+                padding-bottom: 3rem;
+                
+            }
+
+            .s4-img-sm{
+                width: 100%;
+                height: auto;
+                max-width: 32rem;
+            }
+
+            @include breakpoint-down(small){
+                display: flex;
+                margin: auto;
+                flex-direction: column;
+                align-items: center;
+                
+            }
     
+            @include breakpoint-down(medium){
+                display: flex;
+                margin: auto;
+                flex-direction: column;
+                align-items: center;
+                
+            }
+        }
+
+        .s4-dsp-2{
+            display: flex;
+            width: 100%;
+            align-items: center;
+            gap: 2rem;
+            
+            .s4-img-2{
+                height: auto;
+                max-width: 22rem;
+                min-width: 35rem;
+                padding-top: 3rem;
+                padding-bottom: 3rem;
+                
+            }
+
+            .s4-img-sm{
+                width: 100%;
+                height: auto;
+                max-width: 32rem;
+            }
+
+            @include breakpoint-down(small){
+                display: flex;
+                margin: auto;
+                flex-direction: column;
+                align-items: center;
+                
+            }
+    
+            @include breakpoint-down(medium){
+                display: flex;
+                margin: auto;
+                flex-direction: column;
+                align-items: center;
+                
+            }
+        }
+    
+        .s4-dsp-3{
+            display: flex;
+            width: 100%;
+            justify-items: center;
+            gap: 2rem;
+            
+            .s4-img-3{
+                height: auto;
+                max-width: 22rem;
+                min-width: 35rem;
+                padding-top: 3rem;
+                padding-bottom: 3rem;
+                
+            }
+
+            .s4-img-sm{
+                width: calc(100%);
+                height: auto;
+                max-width: 50rem;
+                margin:auto;
+
+            }
+
+            @include breakpoint-down(small){
+                display: flex;
+                margin: auto;
+                flex-direction: column;
+                align-items: center;
+                
+            }
+    
+            @include breakpoint-down(medium){
+                display: flex;
+                margin: auto;
+                flex-direction: column;
+                align-items: center;
+                
+            }
         }
     }
+
+    .cpy{
+        width: 100vw;
+        height: fit-content;
+        min-width: 15rem;
+
+
+        .s4-sb-hdng{
+            color: #262626;
+            font-size: calc(.75vw + .75rem);
+            max-width: 23rem;
+        }
+
+        .txt{
+            color: #808080;
+            font-size: calc(.25vw + 1rem);
+            max-width: 25rem;
+        }
+    }
+
 }
