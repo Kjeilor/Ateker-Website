@@ -1,16 +1,15 @@
 .scn-4{
-    display: flex;
-    max-width: 62rem;
-    margin: auto;
 
     .s4-cont{
-        width: 62rem;
+        max-width: 62rem;
         display: flex;
         flex-direction: column;
-        flex: 1 1 1 0%;
         margin: auto;
+        padding-bottom: 2rem;
 
         .s4-hdr{
+            padding-bottom: 3rem;
+
             .hdr-sb-hdng{
                 color: #29ab87;
                 font-size: calc(.25vw + .8rem);
@@ -24,6 +23,7 @@
             .hdr-txt{
                 color: #808080;
                 font-size: calc(.25vw + 1rem);
+                max-width: 31rem;
                     
                 .hlt{
                     color: #29ab87;
@@ -34,23 +34,17 @@
 
         .s4-dsp-1{
             display: flex;
-            width: 100vw;
             align-items: center;
-            gap: 2rem;
+            gap: 1rem;
+            padding-bottom: 3rem;
             
             .s4-img-1{
                 height: auto;
                 max-width: 22rem;
                 min-width: 35rem;
-                padding-top: 3rem;
-                padding-bottom: 3rem;
+                padding-top: 2rem;
+                padding-bottom: 2rem;
                 
-            }
-
-            .s4-img-sm{
-                width: 100%;
-                height: auto;
-                max-width: 32rem;
             }
 
             @include breakpoint-down(small){
@@ -72,23 +66,17 @@
 
         .s4-dsp-2{
             display: flex;
-            width: 100%;
             align-items: center;
             gap: 2rem;
+            padding-bottom: 3rem;
             
             .s4-img-2{
                 height: auto;
                 max-width: 22rem;
                 min-width: 35rem;
-                padding-top: 3rem;
-                padding-bottom: 3rem;
+                padding-top: 2rem;
+                padding-bottom: 2rem;
                 
-            }
-
-            .s4-img-sm{
-                width: 100%;
-                height: auto;
-                max-width: 32rem;
             }
 
             @include breakpoint-down(small){
@@ -110,25 +98,17 @@
     
         .s4-dsp-3{
             display: flex;
-            width: 100%;
-            justify-items: center;
+            align-items: center;
             gap: 2rem;
+            padding-bottom: 3rem;
             
             .s4-img-3{
                 height: auto;
                 max-width: 22rem;
                 min-width: 35rem;
-                padding-top: 3rem;
-                padding-bottom: 3rem;
+                padding-top: 2rem;
+                padding-bottom: 2rem;
                 
-            }
-
-            .s4-img-sm{
-                width: calc(100%);
-                height: auto;
-                max-width: 50rem;
-                margin:auto;
-
             }
 
             @include breakpoint-down(small){
@@ -149,11 +129,17 @@
         }
     }
 
-    .cpy{
-        width: 100vw;
-        height: fit-content;
-        min-width: 15rem;
+    .s4-img-sm{
+        width: 100%;
+        max-width: 40rem;
+        height: auto;
+        margin: 0;
 
+    }
+
+    .cpy{
+        width: 100%;
+        height: fit-content;
 
         .s4-sb-hdng{
             color: #262626;
@@ -164,8 +150,19 @@
         .txt{
             color: #808080;
             font-size: calc(.25vw + 1rem);
-            max-width: 25rem;
+            max-width: 23rem;
         }
     }
 
+    .s4-cta{
+        background: $magnetite;
+        color: #ffffff;
+        font-size: calc(.25vw + .8rem);
+        cursor: pointer;
+        margin-top: 1.5rem;
+
+        &:hover{
+            background-color: #29ab87;
+        }
+    }
 }
