@@ -1,13 +1,45 @@
 .scn-1{
+    
+    .s1-cont{
+        max-width: 62rem;
+        margin: auto;
+    }
     .hdng{
         display: flex;
         width: fit-content;
-        max-width: 62rem;
-        padding: 0;
+        padding-bottom: 2rem;
         margin: auto;
-        color: #262626; //#29ab87
+        color: #262626;
         font-weight: 500;
         font-size: calc(.25vw + 1.2rem);
 
+    }
+
+    .comp-crsl-1{
+        height: 100%;
+        margin: auto;
+        overflow: hidden;
+        position: relative;
+        width: auto;
+        background: none;
+
+        .crsl-trk{
+            animation: scroll 120s linear infinite;
+            width: 200%;
+            display: flex;
+            
+        }
+    }
+
+    .comp-logo{
+        width: 6rem;
+        height: 6rem;
+        margin-right: 3rem;
+        margin-left: 3rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        align-items: center;
+        justify-content: center;
+        
     }
 }
