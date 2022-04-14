@@ -1,0 +1,59 @@
+html{
+    font-size: 100%;
+    box-sizing: border-box;
+    --leftforDD: 0;
+	--leftforArrow: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;   
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #dcdcdc;
+    line-height: 1.0;
+    min-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+
+}
+
+a, 
+a:visited, 
+a:hover {
+    text-decoration: none;
+}
+
+//Spacing
+.container{
+    padding-top: 2.25rem;
+    padding-left: 1.5rem ;
+    padding-right: 1.5rem;
+    padding-bottom: 2.25rem;
+}
+
+//Flexbox
+.flex {
+    display: flex;
+
+    &-jc-sb {
+        justify-content: space-between;
+    }
+
+    &-jc-c {
+        justify-content: center;
+    }
+
+    &-ai-c {
+        align-items: center;
+    }
+}
+
+h1, h2, h3{
+    margin: 0;
+}
