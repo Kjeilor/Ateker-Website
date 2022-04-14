@@ -10,9 +10,9 @@ This project is the ATEKER company Website.
 	
 ## Technologies
 Project is created with:
-* HTML5
-* CSS/SCSS
-* Java Script
+* HTML 5
+* CSS 3 / SCSS
+* Java Script (Vanilla)
 	
 ## Setup
 To run this project, install it locally using npm:
