@@ -1,34 +1,103 @@
-.header__toggle {
-  cursor: pointer;
+.prodbtn, .compbtn {
+  color: #808080;
+}
+
+.prodbtn:hover, .compbtn:hover {
+  color: #29ab87;
+}
+
+.prcbtn .prclnk {
+  color: #808080;
+}
+
+.prcbtn .prclnk:hover {
+  color: #29ab87;
 }
 
 .header__toggle > bar {
-  display: block;
-  width: 25px;
-  height: 3px;
-  background-color: #808080;
-  -webkit-transition: all 300ms ease-in-out;
-  transition: all 300ms ease-in-out;
-  -webkit-transform-origin: 1px 1.5px;
-          transform-origin: 1px 1.5px;
-  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  background-color: #262626;
 }
 
-.header__toggle > bar:not(:last-child) {
-  margin-bottom: 5px;
+.header .cta {
+  background: #262626;
 }
 
-.prcs {
-  height: 80vh;
-  background-color: #ffffff;
+.header .cta .ctalnk {
+  color: #ffffff;
 }
 
-.prcs .prc-wrpr {
+.header .cta:hover {
+  background: #28ab87;
+}
+
+.prcs .prcs-cont {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 62rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: auto;
+  max-width: 62rem;
+}
+
+.prcs .hdng {
+  color: #262626;
+  line-height: 1;
+  font-size: calc(1vw + 2.7rem);
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.prcs .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 62rem;
+  margin: auto;
+}
+
+.prcs .cards .crd-wrp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5rem;
+  margin: auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.prcs .cards .crd {
+  width: 12rem;
+  height: 25rem;
+  border: none;
+  border-radius: 20px;
+  background: #29ab87;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.prcs .prc-inf {
+  text-align: center;
+  color: #808080;
+}
+
+.prcs .prc-prmt {
+  text-align: center;
+  color: #262626;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+}
+
+.prcs .prc-prmt .hlt {
+  color: #29ab87;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.prcs .prc-prmt .hlt:hover {
+  color: #135744;
 }
 /*# sourceMappingURL=pricing.css.map */

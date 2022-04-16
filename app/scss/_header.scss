@@ -257,7 +257,6 @@
         cursor: pointer;
         font-weight: 600;
         border-radius: 22.5px;
-        transition: 300ms ease-in-out;
         box-shadow: 0 1px 5px rgba(0,0,0,0.1);
         a{
             color: $white;
@@ -316,10 +315,13 @@
     //Mobile menu Pricing Button
 
     .prc-btn{
+        padding: 0.3125rem 1.375rem;
+        border: none;
+        border-radius: 1.375rem;
         background: #29ab87;
+        cursor: pointer;
         
         .prc-lnk{
-            position: relative;
             font-size: calc(.25vw + .7rem);
             font-weight: 600;
             color: #ffffff;
@@ -339,9 +341,7 @@
         font-size: calc(.25vw + .8rem);
         background-color: $junglegreen;
         font-weight: 600;
-        transition: 300ms ease-in-out;
       
-
         &:hover{
             color: white;
             background-color: #135744;

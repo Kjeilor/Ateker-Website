@@ -1,11 +1,63 @@
 .prcs{
-    height: 10vh;
-    background-color: #ffff;
-
-    .prc-wrpr{
+    .prcs-cont{
         display: flex;
-        width: 62rem;
+        flex-direction: column;
         margin: auto;
+        max-width: 62rem;
     }
-    
+
+    .hdng{
+        color: #262626;
+        line-height: 1;
+        font-size: calc(1vw + 2.7rem);
+        text-align: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .cards{
+        display: flex;
+        max-width: 62rem;
+        margin: auto;
+
+        .crd-wrp{
+            display: flex;
+            gap: 5rem;
+            margin: auto;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+        }
+        .crd{
+            width: 12rem;
+            height: 25rem;
+            border: none;
+            border-radius: 20px;
+            background: #29ab87;
+            box-shadow: 0  2px 5px rgba(0,0,0,0.2);
+        }
+
+    }
+
+    .prc-inf{
+        text-align: center;
+        color: #808080;
+        
+    }
+
+    .prc-prmt{
+        text-align: center;
+        color: #262626;
+        padding-top: 5rem;
+        padding-bottom: 2rem;
+
+        .hlt{
+            color: #29ab87;
+            font-weight: 600;
+            cursor: pointer;
+
+            &:hover{
+                color: #135744;
+            }
+        }
+    }
 }
