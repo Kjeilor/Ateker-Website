@@ -3,7 +3,7 @@
     
     nav {
         display: flex;
-        max-width: 62.5rem;
+        max-width: 62rem;
         top: 0;
         align-items: center;
         padding-top: 1.25rem;
@@ -57,18 +57,19 @@
     
     //Desktop nav buttons styles
     .navlist {
-        font-weight: 600;
-        color: white;
-        display: inline-block;
+        display: flex;
         position: relative;
-        padding-left: 0rem;
+        align-items: center;
+        list-style: none;
+        gap: 3rem;
+        margin: 0;
+        padding: 0;
     }
     
     //Nav button arrangement
     .navitem{
-        display: inline-block;
-
-        &:hover ul, &:focus ul{
+        display: block;
+        &:hover div, &:focus div{
             opacity: 1;
             visibility: visible;
         }
@@ -78,15 +79,11 @@
     .prod-menu{
         position: absolute;
         background-color: #ffffff;
-        list-style: none;
-        text-align: left;
-        width: fit-content;
         border-radius: 5px;
-        top: 10px;
-        padding: 1rem;
-        margin: 1rem;
+        width: fit-content;
+        margin-top: .8rem;
         box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-        transform: translateX(-220px);
+        transform: translateX(-205px);
         opacity: 0;
         visibility: hidden;
        
@@ -119,6 +116,9 @@
     }
 
     .prod-item {
+        list-style: none;
+        text-align: left;
+        border-radius: 5px;
         padding: .125rem;
 
     }
@@ -175,17 +175,15 @@
     //Product menu
     .comp-menu{
         position: absolute;
-        background-color: $white;
-        list-style: none;
-        width: fit-content;
+        background-color: #ffffff;
         border-radius: 5px;
-        top: 10px;
-        transform: translateX(-75px);
-        padding: 1.5rem;
-        margin: 1rem;
+        width: fit-content;
+        margin-top: .8rem;
         box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        transform: translateX(-80px);
         opacity: 0;
         visibility: hidden;
+
     }
  
     //Product menu arrow
@@ -203,10 +201,24 @@
  
     }
  
-    .comp-item {
-        padding: .25rem;
-        
+    .comp-lst{
+        align-items: center;
+        width: 100%;
+        max-width: 16.5rem;
+        gap: 1.5rem;
+        padding: 1rem;
+        margin: 0;
+
     }
+
+    .comp-item {
+        list-style: none;
+        text-align: left;
+        border-radius: 5px;
+        padding: .25rem;
+
+    }
+    
  
     .item{
         display: flex;
@@ -217,7 +229,7 @@
         width: 100%;
         padding: .5rem;
         border-radius: 5px;
-        font-size: calc(.25vw + .7rem);
+        font-size: calc(.5vw + .6rem);
         font-weight: 500;
 
         &:hover{
@@ -237,7 +249,7 @@
 
     
     //CTA button
-    &__cta{
+    .cta{
         background-color: $glaceite;
         font-size: $font-sm;
         border: none;
@@ -324,7 +336,7 @@
     //Mobile menu CTA
     .menucta{//Menu CTA button
         padding: 5px 22px;
-        font-size: calc(.25vw + .7rem);
+        font-size: calc(.25vw + .8rem);
         background-color: $junglegreen;
         font-weight: 600;
         transition: 300ms ease-in-out;

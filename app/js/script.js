@@ -13,7 +13,7 @@ const R = function (x, y, time) {
 
 const G = function (x, y, time) {
   return Math.floor(
-    170 +
+    190 +
       64 *
         Math.sin(
           (x * x * Math.cos(time / 4) + y * y * Math.sin(time / 3)) / 300
@@ -23,7 +23,7 @@ const G = function (x, y, time) {
 
 const B = function (x, y, time) {
   return Math.floor(
-    170 +
+    190 +
       64 *
         Math.sin(
           5 * Math.sin(time / 9) +

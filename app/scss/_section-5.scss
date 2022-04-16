@@ -29,11 +29,79 @@
         }
     }
 
-    .s5-cta{
+    .s5-txt-lnks{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+
+        @include breakpoint-down(small){
+            flex-direction: column;
+            
+        }
+
+        @include breakpoint-down(medium){
+            flex-direction: column;
+            
+        }
+
+    }
+
+    .s5-dwnl-btns{
+        display: flex;
+        gap: 5rem;
+        max-width: 30rem;
+        margin: auto;
+
+        @include breakpoint-down(small){
+            flex-direction: column;
+            
+        }
+    }
+
+    .dwnl-btn{
+        width: 100%;
+        max-width: 12rem;
+        border: none;
+        border-radius: .35rem;
+        background: #808080;
+        padding: .5rem 1rem;
+
+        .str-lnk{
+            display: flex;
+            flex: 1 1 0%;
+            align-items: center;
+            margin: auto;
+            gap: .5rem;
+            color: #ffffff;
+            font-size: calc(.25vw + .8rem);
+            font-weight: 600;
+            
+            .bld{
+                font-size: calc(.25vw + 1.2rem);
+                font-weight: 500;
+
+            }
+        }
+
+        &:hover{
+            background: #29ab87;
+        }
+        
+    }
+
+    .s5cta{
+        padding: 0.3125rem 1.375rem;
+        border: none;
+        border-radius: 1.375rem;
         background: $magnetite;
-        color: #ffffff;
         cursor: pointer;
         margin-top: 1.5rem;
+
+        .s5cta-lnk{
+            color: #ffffff;
+            font-size: calc(.25vw + .8rem);
+            font-weight: 600;
+        }
 
         &:hover{
             background-color: #29ab87;

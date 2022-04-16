@@ -60,11 +60,14 @@
             padding: 0.3125rem 1.375rem;
             border: none;
             border-radius: 1.375rem;
-            color: $white;
-            font-weight: 600;
-            font-size: calc(.25vw + .8rem);
             background-color: $glaceite;
-            margin-left: -1.25rem;
+            
+            .cta-lnk{
+                color: $white;
+                font-size: calc(.25vw + .8rem);
+                font-weight: 600;
+                
+            }
             
             &:hover{
               background-color: $magnetite;
