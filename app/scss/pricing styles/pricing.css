@@ -1,3 +1,7 @@
+body {
+  background-color: #EFEFEF;
+}
+
 .prodbtn, .compbtn {
   color: #808080;
 }
@@ -49,6 +53,46 @@
   text-align: center;
   padding-top: 2rem;
   padding-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.prcs .trl-cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 62rem;
+  margin: auto;
+  text-align: center;
+}
+
+.prcs .trl-cta p {
+  font-size: calc(.25vw + 1rem);
+  font-weight: 500;
+  color: #28ab87;
+}
+
+.prcs .trl-cta button {
+  width: 13rem;
+  border: none;
+  border-radius: .5rem;
+  background: #29ab87;
+  padding: 1rem 1.5rem;
+  margin: auto;
+}
+
+.prcs .trl-cta button a {
+  color: #ffffff;
+  font-size: calc(.25vw + .8rem);
+  font-weight: 600;
+}
+
+.prcs .trl-cta button:hover {
+  background: #135744;
 }
 
 .prcs .cards {
@@ -63,32 +107,49 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 5rem;
-  margin: auto;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 0;
+  padding-left: 5%;
+  padding-right: 5%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 3rem;
 }
 
 .prcs .cards .crd {
-  width: 12rem;
-  height: 25rem;
+  width: 15rem;
+  left: 50%;
+  margin: auto;
+  height: 30rem;
   border: none;
   border-radius: 20px;
-  background: #29ab87;
+  background: #ffffff;
   -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
           box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .prcs .prc-inf {
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: calc(.25vw + .8rem);
   color: #808080;
+  padding-top: 1rem;
 }
 
 .prcs .prc-prmt {
   text-align: center;
+  font-size: calc(.25vw + 1rem);
   color: #262626;
   padding-top: 5rem;
   padding-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .prcs .prc-prmt .hlt {

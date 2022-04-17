@@ -21,7 +21,7 @@
     .s5-txt{
         width: 100%;
         color: #808080;
-        max-width: 30rem;
+        max-width: 27rem;
         font-size: calc(.25vw + 1rem);
 
         .hlt{
@@ -31,8 +31,8 @@
 
     .s5-txt-lnks{
         display: flex;
-        align-items: center;
-        gap: 2rem;
+        align-items: left;
+        gap: 3rem;
 
         @include breakpoint-down(small){
             flex-direction: column;
@@ -48,7 +48,7 @@
 
     .s5-dwnl-btns{
         display: flex;
-        gap: 5rem;
+        gap: 3rem;
         max-width: 30rem;
         margin: auto;
 
@@ -59,8 +59,7 @@
     }
 
     .dwnl-btn{
-        width: 100%;
-        max-width: 12rem;
+        width: 14rem;
         border: none;
         border-radius: .35rem;
         background: #808080;
