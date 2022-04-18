@@ -60,6 +60,7 @@
         display: flex;
         position: relative;
         align-items: center;
+        justify-content: center;
         list-style: none;
         gap: 3rem;
         margin: 0;
@@ -69,6 +70,7 @@
     //Nav button arrangement
     .navitem{
         display: block;
+        padding: 1rem 0rem 1rem 0rem;
         &:hover div, &:focus div{
             opacity: 1;
             visibility: visible;
