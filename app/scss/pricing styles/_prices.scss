@@ -29,6 +29,11 @@
             font-size: calc(.25vw + 1rem);
             font-weight: 500;
             color: #28ab87;
+
+            span{
+                font-weight: 600;
+                font-size: calc(.25vw + 1.1rem);
+            }
             
         }
 
@@ -61,10 +66,6 @@
 
         .crd-wrp{
             display: flex;
-            justify-content: space-between;
-            margin-bottom: 0;
-            padding-left: 5%;
-            padding-right: 5%;
             flex-wrap: wrap;
             gap: 3rem;
             margin-left: auto;
@@ -72,6 +73,7 @@
             padding-top: 3rem;
             
         }
+
         .crd{
             width: 15rem;
             left: 50%;
@@ -89,10 +91,89 @@
         text-align: center;
         margin-left: auto;
         margin-right: auto;
-        font-size: calc(.25vw + .8rem);
+        font-size: calc(.25vw + .5rem);
         color: #808080;
         padding-top: 1rem;
         
+    }
+
+    .pln-ftr{
+        display: flex;
+        max-width: 62rem;
+        margin: auto;
+        justify-content: center;
+        
+
+        .pln-btn{
+            padding-top: 3rem;
+            border: none;
+            background: none;
+            
+            a{
+                display: flex;
+                gap: 1rem;
+                color: #29ab87;
+                font-size: calc(.25vw + 1rem);
+                align-items: center;
+
+                &:hover{
+                    color: #135744;
+                    #icn{
+                        fill: #135744;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .alt-prc{
+        display: flex;
+        max-width: 62rem;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 5rem;
+        padding-top: 3rem;
+
+        .alt-prcs{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .alt-txt{
+                text-align: center;
+                max-width: 25rem;
+                color: #808080;
+                font-size: calc(.25vw + 1rem);
+
+            }
+
+            .pln-btn{
+                padding-top: 1rem;
+                border: none;
+                background: none;
+                
+                a{
+                    color: #29ab87;
+                    font-size: calc(.25vw + 1rem);
+                    text-decoration: underline;
+
+                    span{
+                        font-weight: 600;
+                    }
+
+                    &:hover{
+                        color: #135744;
+                    
+                    }
+                }
+            }
+
+        }
+
     }
 
     .prc-prmt{
@@ -108,6 +189,7 @@
             color: #29ab87;
             font-weight: 600;
             cursor: pointer;
+            text-decoration: underline;
 
             &:hover{
                 color: #135744;

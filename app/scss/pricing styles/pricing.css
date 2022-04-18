@@ -76,6 +76,11 @@ body {
   color: #28ab87;
 }
 
+.prcs .trl-cta p span {
+  font-weight: 600;
+  font-size: calc(.25vw + 1.1rem);
+}
+
 .prcs .trl-cta button {
   width: 13rem;
   border: none;
@@ -107,12 +112,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-bottom: 0;
-  padding-left: 5%;
-  padding-right: 5%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 3rem;
@@ -137,9 +136,107 @@ body {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  font-size: calc(.25vw + .8rem);
+  font-size: calc(.25vw + .5rem);
   color: #808080;
   padding-top: 1rem;
+}
+
+.prcs .pln-ftr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 62rem;
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.prcs .pln-ftr .pln-btn {
+  padding-top: 3rem;
+  border: none;
+  background: none;
+}
+
+.prcs .pln-ftr .pln-btn a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  color: #29ab87;
+  font-size: calc(.25vw + 1rem);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.prcs .pln-ftr .pln-btn a:hover {
+  color: #135744;
+}
+
+.prcs .pln-ftr .pln-btn a:hover #icn {
+  fill: #135744;
+}
+
+.prcs .alt-prc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 62rem;
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 5rem;
+  padding-top: 3rem;
+}
+
+.prcs .alt-prc .alt-prcs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.prcs .alt-prc .alt-prcs .alt-txt {
+  text-align: center;
+  max-width: 25rem;
+  color: #808080;
+  font-size: calc(.25vw + 1rem);
+}
+
+.prcs .alt-prc .alt-prcs .pln-btn {
+  padding-top: 1rem;
+  border: none;
+  background: none;
+}
+
+.prcs .alt-prc .alt-prcs .pln-btn a {
+  color: #29ab87;
+  font-size: calc(.25vw + 1rem);
+  text-decoration: underline;
+}
+
+.prcs .alt-prc .alt-prcs .pln-btn a span {
+  font-weight: 600;
+}
+
+.prcs .alt-prc .alt-prcs .pln-btn a:hover {
+  color: #135744;
 }
 
 .prcs .prc-prmt {
@@ -156,6 +253,7 @@ body {
   color: #29ab87;
   font-weight: 600;
   cursor: pointer;
+  text-decoration: underline;
 }
 
 .prcs .prc-prmt .hlt:hover {
