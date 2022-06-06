@@ -132,6 +132,13 @@ body {
           box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
+.prcs .cards .crd .prc-lvl {
+  color: #262626;
+  font-size: calc(.5vw + .5rem);
+  font-weight: 600;
+  padding-top: 1.5rem;
+}
+
 .prcs .prc-inf {
   text-align: center;
   margin-left: auto;
