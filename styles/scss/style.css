@@ -430,7 +430,7 @@ canvas {
 .header .prd-grd {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (14rem)[2];
+  -ms-grid-columns: (14rem)(2);
       grid-template-columns: repeat(2, 14rem);
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -677,6 +677,10 @@ canvas {
   font-weight: 600;
 }
 
+.header .menucta a {
+  color: #ffffff;
+}
+
 .header .menucta:hover {
   color: white;
   background-color: #135744;
@@ -688,7 +692,6 @@ canvas {
   display: flex;
   max-width: 62rem;
   margin: auto;
-  overflow: visible;
 }
 
 .hero .hro-cont {

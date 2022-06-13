@@ -343,6 +343,11 @@
         font-size: calc(.25vw + .8rem);
         background-color: $junglegreen;
         font-weight: 600;
+
+        a{
+            color: #ffffff;
+
+        }
       
         &:hover{
             color: white;
@@ -350,6 +355,5 @@
         }
     }
 
-    
   
 }
