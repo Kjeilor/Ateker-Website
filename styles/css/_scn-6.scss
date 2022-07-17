@@ -1,0 +1,82 @@
+.dwnl{
+    .dwnl-cont{
+        display: flex;
+        flex-direction: column;
+        max-width: 62rem;
+        margin: auto;
+        padding: 5rem 0rem;
+        justify-items: center;
+
+        .dwnl-txt{
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            gap: 1rem;
+            padding-bottom: 3rem;
+            text-align: center;
+
+            .hdng{
+                color: #262626;
+                font-size: calc(.75vw + 1.25rem);
+                
+            }
+
+            .copy-txt{
+                color: #808080;
+                font-size: calc(.25vw + 1rem);
+                    
+            }
+
+        }
+
+        .dwnl-lnks{
+            display: flex;
+            width: 100%;
+            margin: auto;
+
+            .lnks-wrpr{
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+                gap: 3rem;
+                width: 40rem;
+                margin-left: auto;
+                margin-right: auto;
+                justify-content: center;
+
+                .cta-wrpr{
+                    display: flex;
+                    margin: auto;
+
+                    .cta-btn{
+                        padding: .5rem 1rem;
+                        border: none;
+                        border-radius: .75rem;
+                        background-color: #262626;
+                        position: relative;
+                        text-align: left;
+                        width: 15rem;
+                        color: $white;
+                        font-size: 1rem;
+                        display: flex;
+                        align-items: center;
+                        gap: 1rem;
+          
+                        span{
+                            font-size: 1.75rem;
+                            display: flex;
+                        }
+                      
+                        &:hover{
+                            background-color: #808080;
+                        
+                        }
+                    
+                    }
+                }
+            }
+
+        }
+
+        
+    }
+}

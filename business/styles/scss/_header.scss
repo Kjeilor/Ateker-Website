@@ -79,14 +79,14 @@
           border: none;
           background: none;
           cursor: default;
-          color: #808080;
+          color: $white;
           font-size: $font-med;
           font-weight: 500;
           text-shadow: 0 0.0625rem 0.3125rem rgba(0,0,0,0.15);
           text-decoration: none;
     
           &:hover{
-              color: $junglegreen;
+              color: $graphite;
             }
         }
 
@@ -96,12 +96,12 @@
           background: none;
           text-shadow: 0 0.0625rem 0.3125rem rgba(0,0,0,0.15);
           text-decoration: none;
-          color: #808080;
+          color: $white;
           font-size: $font-med;
           font-weight: 500;
 
            &:hover{
-              color: $junglegreen;
+              color: $graphite;
 
             }
 
@@ -289,7 +289,7 @@
     
     //CTA button
     .cta{
-        background-color: $ash;
+        background-color: $glaceite;
         font-size: $font-med;
         border: none;
         padding: .5rem 1rem;
@@ -300,10 +300,8 @@
         color: $white;
 
         &:hover{
-          background-color: $junglegreen;
-
+          background-color: $magnetite;
         }
-        
     }
  
 

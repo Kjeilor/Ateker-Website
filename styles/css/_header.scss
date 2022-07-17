@@ -1,0 +1,219 @@
+.header{
+    z-index: 1;
+    
+    nav {
+        display: flex;
+        max-width: 62rem;
+        top: 0;
+        align-items: center;
+        padding: 1.5rem;
+        margin: auto;
+        gap: 5rem;
+    }
+    
+    //LOGO
+    .logo{ 
+        &:hover{
+            opacity: 0.75;
+        }
+    }
+    
+    // Mobile Menu Toggle
+    &__toggle {
+        cursor: pointer;
+        >bar{
+            display: block;
+            width: 25px;
+            height: 3px;
+            background-color: #ffffff;
+            transition: all 300ms ease-in-out;
+            transform-origin: 1px 1.5px;
+            box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+
+            &:not(:last-child){
+            margin-bottom: 5px;
+            }
+
+        }
+    }
+
+    //Hamburger Open Styles
+    &.open{
+        .header__toggle{
+            >bar:first-child{
+               transform: rotate(45deg);
+
+            }
+            >bar:nth-child(2){
+               opacity: 0;
+               
+            }
+            >bar:last-child{
+               transform: rotate(-45deg);
+               
+            }
+        }
+
+    }
+    
+    //CTA button
+    .fb-cta{
+        background-color: $glaceite;
+        font-size: $font-med;
+        border: none;
+        padding: .5rem 1rem;
+        cursor: pointer;
+        font-weight: 500;
+        border-radius: 1rem;
+        box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+        text-align: center;
+        color: $white;
+
+        &:hover{
+          background-color: $magnetite;
+        }
+    }
+ 
+
+    //Company menu
+
+    .comp-lst{
+        align-items: center;
+        width: 100%;
+        max-width: 16.5rem;
+        gap: 1.5rem;
+        padding: 1rem;
+        margin: 0;
+
+    }
+
+    .comp-item {
+        list-style: none;
+        text-align: left;
+        border-radius: 5px;
+        padding: .25rem;
+
+    }
+    
+ 
+    .item{
+        display: flex;
+        align-items: center;
+        text-align: left;
+        gap: .5rem;
+        color: #808080;
+        width: 11rem;
+        padding: .5rem;
+        border-radius: 5px;
+        font-size: calc(.5vw + .6rem);
+        font-weight: 500;
+
+        &:hover{
+            background: #29ab8733;
+            color: #29ab87;
+
+            #icn{
+                fill: #29ab87;
+            }
+        }
+
+        .elms-b__icn{
+            height: calc(.25vw + .5rem);
+        }
+
+    }
+
+    //Mobile Menu
+
+    .mobile-menu{
+        position: absolute;
+        background-color: #ffffff;
+        display: block;
+        text-align: left;
+        top: 60px;
+        padding: 20px;
+        border-radius: 5px;
+        width: calc(100% - 3rem);
+        left: 50%;
+        transform: translateX(-50%);
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        transition: 300ms ease-in-out;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 100;
+
+        .menu-heading{
+            color: $graphite;
+            font-weight: 600;
+            margin-left: 1.25rem;
+            margin-top: 1.25rem;
+            cursor: default;
+
+        }
+
+        .company{
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(12.1875rem, 1fr));
+            gap: .5rem;
+            justify-items: center;
+            
+        }
+
+    }
+
+    //Mobile menu Download
+    .dwnl-lnks{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr));
+        gap: 3rem;
+        justify-items: center;
+
+        .dwn-btn{
+            padding: .5rem 1rem;
+            border: none;
+            border-radius: .75rem;
+            background-color: #262626;
+            position: relative;
+            text-align: left;
+            width: 11rem;    
+            color: $white;
+            font-size: .75rem;
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+    
+            span{
+                font-size: 1.25rem;
+                    
+            }
+                
+            &:hover{
+                background-color: #808080;
+    
+            }
+    
+        }
+    }
+
+    //Mobile menu CTA
+    .menucta{//Menu CTA button
+        padding: .5rem 1rem;
+        font-size: calc(.25vw + .8rem);
+        background-color: $junglegreen;
+        font-weight: 500;
+        cursor: pointer;
+        border-radius: 1rem;
+        box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+        color: #ffffff;
+        text-align: center;
+
+        &:hover{
+            color: white;
+            background-color: #135744;
+        }
+    }
+
+  
+}
+
