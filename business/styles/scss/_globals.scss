@@ -81,6 +81,10 @@ canvas {
         height: 160%;
     }
 
+    @include breakpoint-down(medium){
+        height: 250%;
+    }
+
 }
 
 //Sections

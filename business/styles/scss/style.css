@@ -186,6 +186,12 @@ canvas {
   }
 }
 
+@media (max-width: 63.9375em) {
+  canvas {
+    height: 250%;
+  }
+}
+
 .header {
   width: 100%;
   background-color: transparent;

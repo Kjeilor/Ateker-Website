@@ -200,6 +200,12 @@ canvas {
   }
 }
 
+@media (max-width: 63.9375em) {
+  canvas {
+    height: 250%;
+  }
+}
+
 header {
   top: 0;
   width: 100%;
