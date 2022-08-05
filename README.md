@@ -17,10 +17,4 @@ Project is created with:
 * Java Script (Vanilla)
 	
 ## Setup
-To run this project, install it locally using npm:
-
-```
-$ cd ../lorem
-$ npm install
-$ npm start
-```
+www.ateker.co
