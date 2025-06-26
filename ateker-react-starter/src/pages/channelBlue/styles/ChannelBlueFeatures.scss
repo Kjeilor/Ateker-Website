@@ -1,0 +1,73 @@
+@import "../../../assets/styles/variables.scss";
+
+.channelblue-features {
+  background-color: #ffffff;
+  padding: 5rem 2rem;
+  .container {
+    max-width: 105rem;
+    margin: 0 auto;
+
+    h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: $graphite;
+      margin-bottom: 0.5rem;
+    }
+
+    .features-subtitle {
+      text-align: center;
+      font-size: 1.5rem;
+      color: #666;
+      margin-bottom: 3rem;
+    }
+
+    .features-grid {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+
+      .feature-card {
+        flex: 1 1 220px;
+        max-width: 15rem;
+        padding: 2rem;
+        background: #fafafa;
+        border-radius: 1rem;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+        text-align: center;
+        transition: transform 0.3s ease;
+
+        svg {
+          color: $junglegreen;
+          margin-bottom: 1rem;
+        }
+
+        h4 {
+          font-size: 1.125rem;
+          margin-bottom: 0.5rem;
+          color: $graphite;
+        }
+
+        p {
+          font-size: 1rem;
+          color: #555;
+        }
+
+        &:hover {
+          transform: translateY(-4px);
+        }
+      }
+    }
+
+    @media (max-width: 768px) {
+      .features-grid {
+        flex-direction: column;
+        align-items: center;
+
+        .feature-card {
+          max-width: 90%;
+        }
+      }
+    }
+  }
+}

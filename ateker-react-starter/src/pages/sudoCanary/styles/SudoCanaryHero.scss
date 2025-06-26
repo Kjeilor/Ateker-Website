@@ -1,0 +1,160 @@
+@import "../../../assets/styles/variables.scss";
+
+.sudo-canary-hero {
+  background-color: #fefefe;
+  padding: 4rem 2rem;
+
+  .container {
+    max-width: 70rem;
+    margin: 0 auto;
+  }
+
+  .hero-content {
+    padding-top: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+    flex-wrap: wrap;
+
+    .hero-text {
+      flex: 1 1 25rem;
+
+      h1 {
+        font-size: 3rem;
+        color: $graphite;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: 1.25rem;
+        color: #555;
+        margin-bottom: 2rem;
+        max-width: 550px;
+      }
+
+      .cta-btn {
+        background-color: $graphite;
+        color: $white;
+        font-weight: 600;
+        padding: 0.75rem 1.5rem;
+        border-radius: 1.5rem;
+        text-decoration: none;
+        display: inline-block;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: $junglegreen;
+        }
+      }
+    }
+
+    .hero-image {
+      flex: 1 1 25rem;
+      position: relative;
+
+      img {
+        width: 100%;
+      
+      }
+
+      .grid-zone {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        background-color: rgba(252, 1, 1, 0.8);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 50%;
+        animation: pulseGrid 5s ease-in-out infinite;
+        pointer-events: none;
+      }
+
+      .hero-overlay-card {
+        position: absolute;
+        display: flex;
+        gap: 0.75rem;
+        align-items: flex-start;
+        padding: 1rem 1.25rem;
+        background: rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(0, 0, 0, 0.15);
+        border-radius: 1rem;
+        color: #fff;
+        max-width: 220px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+        animation: fadeInOut 5s ease-in-out;
+        opacity: 1;
+
+        svg {
+          flex-shrink: 0;
+          color: #fff;
+          margin-top: 0.15rem;
+        }
+
+        .card-text {
+          strong {
+            font-size: 0.95rem;
+          }
+
+          p {
+            font-size: 0.8rem;
+            color: #ddd;
+            margin: 0.25rem 0 0;
+          }
+        }
+      }
+    }
+  }
+
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    10% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes pulseGrid {
+    0%,
+    100% {
+      transform: scale(1);
+      opacity: 0.25;
+    }
+    50% {
+      transform: scale(1.2);
+      opacity: 0.5;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .hero-content {
+      flex-direction: column;
+
+      .hero-text {
+        text-align: center;
+      }
+
+      .hero-image {
+        .hero-overlay-card {
+          position: static;
+          margin: 1rem auto 0;
+          display: block;
+          max-width: 90%;
+        }
+
+        .grid-zone {
+          display: none;
+        }
+      }
+    }
+  }
+}

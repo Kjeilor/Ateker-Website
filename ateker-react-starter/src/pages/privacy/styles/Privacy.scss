@@ -1,0 +1,35 @@
+.privacy {
+  padding-top: 7rem;
+  padding: 4rem 2rem;
+  max-width: 800px;
+  margin: auto;
+
+  h1 {
+    font-size: 2.25rem;
+    margin-bottom: 1.5rem;
+    color: #262626;
+  }
+
+  .markdown {
+    padding-top: 7rem;
+    line-height: 1.7;
+    color: #444;
+
+    h2 {
+      margin-top: 2rem;
+      color: #262626;
+      font-size: 1.5rem;
+    }
+
+    ul {
+      padding-left: 1.25rem;
+      list-style: disc;
+      margin: 1rem 0;
+    }
+
+    a {
+      color: #29ab87;
+      text-decoration: underline;
+    }
+  }
+}

@@ -1,0 +1,57 @@
+@import "../../../assets/styles/variables.scss";
+
+.corner-store-features {
+  padding: 5rem 2rem;
+  background: #fff;
+
+  .container {
+    max-width: 70rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 2rem;
+    color: $graphite;
+    margin-bottom: 1rem;
+  }
+
+  .features-subtitle {
+    font-size: 1.125rem;
+    color: #666;
+    margin-bottom: 3rem;
+  }
+
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+
+    .feature-card {
+      background: #fafafa;
+      padding: 2rem;
+      border-radius: 1rem;
+      text-align: center;
+      max-width: 250px;
+      margin: 0 auto;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+
+      svg {
+        color: $junglegreen;
+        margin-bottom: 1rem;
+      }
+
+      h4 {
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+        color: $graphite;
+      }
+
+      p {
+        font-size: 0.95rem;
+        color: #555;
+      }
+    }
+  }
+}

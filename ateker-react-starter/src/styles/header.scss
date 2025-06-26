@@ -1,0 +1,99 @@
+// _header.scss
+
+.site-header {
+  top: 0;
+  width: 100%;
+  height: fit-content;
+  background: transparent;
+  z-index: 1;
+  overflow-x: hidden;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  max-width: 62rem;
+  padding: 1.5rem;
+  margin: auto;
+  gap: 5rem;
+
+  .logo:hover {
+    opacity: 0.75;
+  }
+
+  .nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+
+    .dropdown {
+      position: relative;
+
+      span {
+        cursor: pointer;
+        font-weight: 500;
+        color: #ffffff;
+      }
+
+      .dropdown-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: #ffffff;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        display: none;
+
+        li {
+          margin: 0.5rem 0;
+
+          a {
+            color: #333;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+
+            &:hover {
+              color: #29ab87;
+            }
+          }
+        }
+      }
+
+      &:hover .dropdown-menu {
+        display: block;
+      }
+    }
+  }
+
+  .sign-in-btn {
+    background-color: #ffffff40;
+    font-size: 1rem;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: 1rem;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+
+    &:hover {
+      background-color: #00000040;
+    }
+  }
+}
+
+@media (max-width: 63.9375em) {
+  .hide-for-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 64em) {
+  .hide-for-desktop {
+    display: none;
+  }
+}

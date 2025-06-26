@@ -1,0 +1,45 @@
+.terms {
+  padding: 4rem 2rem;
+  background-color: #fefefe;
+  color: #262626;
+  font-family: "Inter", sans-serif;
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+  }
+
+  .markdown {
+    padding-top: 7rem;
+    max-width: 800px;
+    margin: 0 auto;
+
+    h2, h3 {
+      margin-top: 2rem;
+      font-weight: 600;
+      color: #262626;
+    }
+
+    p {
+      margin: 1rem 0;
+      line-height: 1.7;
+      font-size: 1rem;
+      color: #444;
+    }
+
+    ul, ol {
+      margin-left: 2rem;
+      line-height: 1.6;
+    }
+
+    a {
+      color: #29ab87;
+      text-decoration: underline;
+
+      &:hover {
+        color: #135744;
+      }
+    }
+  }
+}

@@ -1,0 +1,90 @@
+@import "../../../assets/styles/variables.scss";
+
+.storebook-hero {
+  background: #fefefe;
+  padding: 4rem 2rem;
+
+  .container {
+    max-width: 70rem;
+    margin: 0 auto;
+  }
+
+  .hero-content {
+    padding-top: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .text-block {
+    margin: auto;
+    flex: 1 1 30rem;
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: $graphite;
+    }
+
+    p {
+      font-size: 1.5rem;
+      font-size: 500;
+      color: #555;
+      margin-bottom: 2rem;
+      max-width: 550px;
+    }
+
+    .cta-btn {
+      background-color: $graphite;
+      color: $white;
+      font-weight: 600;
+      padding: 0.75rem 1.5rem;
+      border-radius: 1.5rem;
+      text-decoration: none;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: $junglegreen;
+
+      }
+    }
+  }
+
+  .image-block {
+    flex: 1 1 30rem;
+    text-align: center;
+
+    img {
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+     
+    }
+  }
+
+  @media (max-width: 768px) {
+    .hero-content {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .text-block {
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1.1rem;
+      }
+    }
+
+    .image-block {
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}

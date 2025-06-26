@@ -1,0 +1,59 @@
+// src/components/404/NotFound.scss
+@import "../../../assets/styles/variables.scss";
+
+.not-found-page {
+  min-height: 100vh;
+  background-color: #f9f9f9;
+  padding: 6rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  .container {
+    max-width: 600px;
+
+    .icon-wrap {
+      color: $junglegreen;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: $graphite;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.125rem;
+      color: #666;
+      margin-bottom: 2rem;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      background-color: $graphite;
+      color: $white;
+      font-weight: 600;
+      padding: 0.75rem 1.5rem;
+      border-radius: 2rem;
+      text-decoration: none;
+
+      &:hover {
+        background-color: $junglegreen;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+}

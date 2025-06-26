@@ -1,0 +1,78 @@
+@import "../../../assets/styles/variables.scss";
+
+.corner-store-hero {
+  background-color: #fefefe;
+  padding: 4rem 2rem;
+
+  .container {
+    max-width: 70rem;
+    margin: 0 auto;
+  }
+
+  .hero-content {
+    padding-top: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+    flex-wrap: wrap;
+
+    .hero-text {
+      flex: 1 1 25rem;
+
+      h1 {
+        font-size: 3rem;
+        color: $graphite;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: 1.25rem;
+        color: #555;
+        margin-bottom: 2rem;
+        max-width: 550px;
+      }
+
+      .cta-btn {
+        background-color: $graphite;
+        color: $white;
+        font-weight: 600;
+        padding: 0.75rem 1.5rem;
+        border-radius: 1.5rem;
+        text-decoration: none;
+
+        &:hover {
+          background-color: $junglegreen;
+        }
+      }
+    }
+
+    .hero-image {
+      flex: 1 1 22rem;
+
+      img {
+        width: 100%;
+        max-width: 500px;
+        border-radius: 1rem;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .hero-content {
+      flex-direction: column;
+
+      .hero-text {
+        text-align: center;
+
+        h1 {
+          font-size: 2.25rem;
+        }
+
+        p {
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+}

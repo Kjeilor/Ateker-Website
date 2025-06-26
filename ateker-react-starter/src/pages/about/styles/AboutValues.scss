@@ -1,0 +1,75 @@
+// src/pages/about/styles/AboutValues.scss
+@import "../../../assets/styles/variables.scss";
+
+.about-values {
+  padding: 5rem 2rem;
+  background-color: #f9f9f9;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: $graphite;
+    margin-bottom: 3rem;
+  }
+
+  .values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+    gap: 2rem;
+  }
+
+  .value-card {
+    background: #fefefe;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+    }
+
+    .icon {
+      background: $junglegreen;
+      color: #fff;
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1.25rem;
+    }
+
+    h4 {
+      font-size: 1.5rem;
+      color: $graphite;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #555;
+      line-height: 1.5;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 4rem 1.5rem;
+
+    h2 {
+      font-size: 1.75rem;
+    }
+
+    .value-card {
+      padding: 1.5rem;
+    }
+  }
+}

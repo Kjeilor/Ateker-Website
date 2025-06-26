@@ -1,0 +1,136 @@
+@import "../../../assets/styles/variables.scss";
+
+.corner-store-video {
+  background-color: #f3f3f3;
+  padding: 5rem 2rem;
+
+  .container {
+    max-width: 80rem;
+    margin: 0 auto;
+  }
+
+  .video-wrapper {
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+
+    .store-video {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 1rem;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .overlay-card {
+      position: absolute;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      padding: 1rem 1.25rem;
+      background: rgba(0, 0, 0, 0.15);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      border-radius: 1rem;
+      color: #fff;
+      max-width: 240px;
+      pointer-events: none;
+      opacity: 0;
+      animation: fadeInOut 15s ease-in-out infinite;
+
+      svg {
+        flex-shrink: 0;
+        color: #fff;
+      }
+
+      .card-content {
+        h5 {
+          font-size: 1rem;
+          font-weight: 600;
+          margin: 0;
+        }
+
+        p {
+          font-size: 0.875rem;
+          margin: 0.25rem 0 0;
+          color: #ddd;
+        }
+      }
+
+      &.delay-1 { animation-delay: 0s; }
+      &.delay-2 { animation-delay: 5s; }
+      &.delay-3 { animation-delay: 10s; }
+      &.delay-4 { animation-delay: 15s; }
+    }
+
+    .desktop-only {
+      display: block;
+    }
+
+    .mobile-only {
+      display: none;
+    }
+
+    .overlay-stack {
+      display: none;
+    }
+  }
+
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    10% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    80% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes slideFade {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    20% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    80% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .video-wrapper {
+      .desktop-only {
+        display: none !important;
+      }
+
+      .mobile-only {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 1rem;
+      }
+
+      .overlay-card {
+        position: static;
+        width: 100%;
+        max-width: 90%;
+        padding: 0.85rem 1rem;
+        background: rgba(0, 0, 0, 0.25);
+      
+      }
+    }
+  }
+}
