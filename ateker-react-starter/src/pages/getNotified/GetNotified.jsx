@@ -1,5 +1,6 @@
 // src/pages/GetNotified.jsx
 import React, { useState } from "react";
+import ThankYouMessage from "./components/ThankYouMessage";
 import "./styles/GetNotified.scss";
 
 const GetNotified = () => {
@@ -51,13 +52,17 @@ const GetNotified = () => {
 
   return (
     <div className="notify-page">
-      <div className="notify-container">
-        <h2>Register Interest</h2>
-        <p>
-          Fill out the form below and we'll contact you about using Ateker in
-          your city, department, or institution.
-        </p>
+      {!submitted && (
+        <>
+          <h2>Register Interest</h2>
+          <p>
+            Fill out the form below and we'll contact you about using Ateker in
+            your city, department, or institution.
+          </p>
+        </>
+      )}
 
+      <div className="notify-container">
         {!submitted ? (
           <form className="interest-form" onSubmit={handleSubmit}>
             <input
@@ -119,10 +124,7 @@ const GetNotified = () => {
             </button>
           </form>
         ) : (
-          <div className="confirmation-message">
-            <h3>Thank you!</h3>
-            <p>We’ve received your interest and will be in touch soon.</p>
-          </div>
+          <ThankYouMessage />
         )}
       </div>
     </div>

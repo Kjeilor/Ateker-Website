@@ -1,29 +1,37 @@
+@import "../../../assets/styles/variables.scss";
+
 .notify-page {
   padding: 5rem 2rem;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 7rem;
+
+  h2 {
+    font-size: 2.25rem;
+    color: #262626;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+
+  p {
+    color: #262626;
+    font-weight: 500;
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    text-align: center;
+  }
 
   .notify-container {
     max-width: 600px;
     width: 100%;
-    margin-top: 7rem;
-    padding: 5rem;
+    padding: 4rem 3rem;
     background: rgba(255, 255, 255, 0.3);
-    border-radius: 0.5rem;
-    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
-
-    h2 {
-      font-size: 2rem;
-      color: #262626;
-      margin-bottom: 0.5rem;
-    }
-
-    p {
-      color: #262626;
-      font-weight: 500;
-      font-size: 1.125rem;
-      margin-bottom: 2rem;
-    }
+    border-radius: 0.75rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(10px);
+    margin-top: 1rem;
 
     .interest-form {
       display: flex;
@@ -39,8 +47,7 @@
         border-radius: 0.5rem;
         font-family: inherit;
         color: #262626;
-        width: 100%;
-        box-sizing: border-box;
+        background-color: #fff;
       }
 
       .cta-btn {
@@ -53,7 +60,7 @@
         padding: 0.75rem 1.5rem;
         border-radius: 1.5rem;
         cursor: pointer;
-        align-self: flex-start;
+        transition: background-color 0.3s ease;
 
         &:hover {
           background-color: #29ab87;
@@ -65,30 +72,35 @@
       text-align: center;
 
       h3 {
+        font-size: 2rem;
         color: #29ab87;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: 1.125rem;
+        color: #262626;
       }
     }
   }
 
   @media (max-width: 768px) {
-    padding: 3rem 1.5rem;
+    padding: 3rem 1.25rem;
+
+    h2 {
+      font-size: 1.75rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
 
     .notify-container {
-      margin-top: 5rem;
       padding: 2.5rem 1.5rem;
-
-      h2 {
-        font-size: 1.5rem;
-      }
-
-      p {
-        font-size: 1rem;
-      }
 
       .interest-form {
         .cta-btn {
           width: 100%;
-          text-align: center;
         }
       }
     }
