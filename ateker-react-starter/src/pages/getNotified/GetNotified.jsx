@@ -17,10 +17,36 @@ const GetNotified = () => {
     setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Interest form submitted:", formData);
-    setSubmitted(true);
+
+    const payload = {
+      organization: formData.organization,
+      name: formData.contactName,
+      email: formData.email,
+      role: formData.role,
+      interest: formData.interest,
+      message: formData.notes,
+      timestamp: new Date().toISOString(),
+    };
+
+    try {
+      const response = await fetch("https://sheetdb.io/api/v1/hioiqxq8rz9gy", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ data: payload }),
+      });
+
+      if (response.ok) {
+        setSubmitted(true);
+      } else {
+        console.error("Submission failed");
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+    }
   };
 
   return (
@@ -71,7 +97,9 @@ const GetNotified = () => {
               onChange={handleChange}
               required
             >
-              <option value="">Which product are you most interested in?</option>
+              <option value="">
+                Which product are you most interested in?
+              </option>
               <option value="Sudo Canary">Sudo Canary</option>
               <option value="Channel Blue">Channel Blue</option>
               <option value="Storebook">Storebook</option>

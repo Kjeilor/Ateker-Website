@@ -8,8 +8,8 @@ const CornerStoreCTA = () => (
     <div className="container">
       <h2>Support Local. Grow Together.</h2>
       <p>
-        Corner Store empowers communities to shop locally with the ease and
-        convenience of digital tools — helping neighborhoods thrive.
+        Corner Store helps neighborhoods thrive by empowering communities to
+        shop online, locally, with convenient digital tools.
       </p>
       <Link to="/get-notified" className="cta-btn alt">
         Join the Waitlist
