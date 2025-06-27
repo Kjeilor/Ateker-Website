@@ -13,10 +13,12 @@ const Privacy = () => {
   }, []);
 
   return (
-    <section className="privacy container">
-      <h1>Privacy Policy</h1>
-      <div className="markdown">
-        <ReactMarkdown>{content}</ReactMarkdown>
+    <section className="privacy">
+      <div className="container">
+        <h1>Privacy Policy</h1>
+        <div className="markdown">
+          <ReactMarkdown>{content}</ReactMarkdown>
+        </div>
       </div>
     </section>
   );

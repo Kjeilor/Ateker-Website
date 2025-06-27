@@ -19,7 +19,7 @@ const StorebookHero = () => {
               Get Started
             </Link>
           </div>
-          <div className="image-block">
+          <div className="hero-image">
             <img
               src={StorebookHeroImage}
               alt="Illustration of Storebook platform"

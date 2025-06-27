@@ -1,7 +1,7 @@
 @import "../../../assets/styles/variables.scss";
 
 .storebook-hero {
-  background: #fefefe;
+  background-color: #fefefe;
   padding: 4rem 2rem;
 
   .container {
@@ -16,75 +16,83 @@
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 2rem;
-  }
 
-  .text-block {
-    margin: auto;
-    flex: 1 1 30rem;
+    .text-block {
+      flex: 1 1 30rem;
 
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-      color: $graphite;
-    }
+      h1 {
+        font-size: 3rem;
+        color: $graphite;
+        margin-bottom: 1rem;
+      }
 
-    p {
-      font-size: 1.5rem;
-      font-size: 500;
-      color: #555;
-      margin-bottom: 2rem;
-      max-width: 550px;
-    }
+      p {
+        font-size: 1.5rem;
+        color: #555;
+        margin-bottom: 2rem;
+        max-width: 550px;
+      }
 
-    .cta-btn {
-      background-color: $graphite;
-      color: $white;
-      font-weight: 600;
-      padding: 0.75rem 1.5rem;
-      border-radius: 1.5rem;
-      text-decoration: none;
-      display: inline-block;
-      transition: background-color 0.3s ease;
+      .cta-btn {
+        background-color: $graphite;
+        color: $white;
+        font-weight: 600;
+        padding: 0.75rem 1.5rem;
+        border-radius: 1.5rem;
+        text-decoration: none;
+        display: inline-block;
+        transition: background-color 0.3s ease;
 
-      &:hover {
-        background-color: $junglegreen;
-
+        &:hover {
+          background-color: $junglegreen;
+        }
       }
     }
-  }
 
-  .image-block {
-    flex: 1 1 30rem;
-    text-align: center;
+    .hero-image {
+      flex: 1 1 35rem;
+      text-align: center;
 
-    img {
-      width: 100%;
-      max-width: 500px;
-      height: auto;
-     
+      img {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        border-radius: 1rem;
+        object-fit: contain;
+      }
     }
   }
 
   @media (max-width: 768px) {
     .hero-content {
       flex-direction: column;
-      text-align: center;
+      align-items: center;
+      padding-top: 4rem;
     }
 
     .text-block {
+      text-align: center;
+
       h1 {
         font-size: 2rem;
       }
 
       p {
         font-size: 1.1rem;
+        max-width: 100%;
+      }
+
+      .cta-btn {
+        width: 100%;
+        max-width: 300px;
       }
     }
 
-    .image-block {
+    .hero-image {
       img {
         max-width: 100%;
       }
     }
   }
 }
+
