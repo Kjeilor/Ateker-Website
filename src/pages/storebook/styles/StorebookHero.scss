@@ -19,6 +19,7 @@
 
     .text-block {
       flex: 1 1 30rem;
+      max-height: fit-content;
 
       h1 {
         font-size: 3rem;
@@ -50,7 +51,9 @@
     }
 
     .hero-image {
+      position: relative;
       flex: 1 1 35rem;
+      max-height: fit-content;
       text-align: center;
 
       img {
@@ -67,7 +70,7 @@
     .hero-content {
       flex-direction: column;
       align-items: center;
-      padding-top: 4rem;
+      max-height: fit-content;
     }
 
     .text-block {
@@ -90,9 +93,8 @@
 
     .hero-image {
       img {
-        max-width: 100%;
+        max-height: fit-content;
       }
     }
   }
 }
-

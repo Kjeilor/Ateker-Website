@@ -26,7 +26,7 @@
     }
 
     p {
-      font-size: 1.125rem;
+      font-size: 1.5rem;
       color: #555;
       margin-bottom: 2rem;
       max-width: 600px;
@@ -49,8 +49,9 @@
 
   .hro-img {
     position: relative;
-    flex: 1 1 500px;
-    min-width: 300px;
+    flex: 1 1 35rem;
+    max-height: fit-content;
+
 
     img {
       width: 100%;
@@ -116,7 +117,7 @@
     }
 
     .hro-img {
-      height: fit-content;
+      max-height: fit-content;
       .hero-overlay-glass {
         display: none !important;
       }

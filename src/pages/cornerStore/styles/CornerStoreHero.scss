@@ -18,7 +18,8 @@
     flex-wrap: wrap;
 
     .hero-text {
-      flex: 1 1 25rem;
+      flex: 1 1 30rem;
+      max-height: fit-content;
 
       h1 {
         font-size: 3rem;
@@ -27,7 +28,7 @@
       }
 
       p {
-        font-size: 1.5rem;
+        font-size: 2rem;
         color: #555;
         margin-bottom: 2rem;
         max-width: 550px;
@@ -48,11 +49,13 @@
     }
 
     .hero-image {
-      flex: 1 1 30rem;
+      position: relative;
+      flex: 1 1 35rem;
+      max-width: 100%;
+      max-height: fit-content;
 
       img {
         width: 100%;
-        max-width: 500px;
         border-radius: 1rem;
       }
     }
@@ -70,7 +73,7 @@
         }
 
         p {
-          font-size: 1.1rem;
+          font-size: 1.5rem;
         }
       }
     }
