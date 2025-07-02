@@ -209,13 +209,9 @@
       gap: 0.5rem;
 
       a {
-        color: #ccc;
+        color: #fff;
         font-size: 1.125rem;
         text-decoration: none;
-
-        &:hover {
-          color: #fff;
-        }
       }
 
       &.expanded {
