@@ -36,7 +36,7 @@ const Section2 = () => {
           Built for the decisions that shape our population centers and institutions
         </h2>
         <p className="section-intro">
-          Ateker integrates with the systems that support our urban ifrastructure, models
+          Ateker integrates with the systems that support our urban infrastructure, models
           outcomes, reveals risk, improving service delivery, and supporting
           better decisions through real-time insight.
         </p>

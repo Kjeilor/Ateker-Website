@@ -9,7 +9,7 @@ const SudoCanaryCTA = () => (
     <h2>Build Responsively. Decide Intelligently.</h2>
     <p>
       Sudo Canary enables forward-thinking institutions to test for outcomes before
-      acting reducing risk and improving urban planning.
+      acting, reducing risk and improving urban planning.
     </p>
     <Link to="/get-notified" className="cta-btn alt">
       Get Notified

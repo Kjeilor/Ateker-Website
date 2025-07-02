@@ -179,7 +179,7 @@
     .menu-toggle {
       background: none;
       color: #fff;
-      font-size: 1.1rem;
+      font-size: 1.125rem;
       font-weight: 500;
       text-align: left;
       padding: 0.5rem 0;
@@ -203,14 +203,14 @@
 
     .submenu {
       list-style: none;
-      padding-left: 1rem;
+      padding-left: 1.125rem;
       display: none;
       flex-direction: column;
       gap: 0.5rem;
 
       a {
         color: #ccc;
-        font-size: 1rem;
+        font-size: 1.125rem;
         text-decoration: none;
 
         &:hover {
