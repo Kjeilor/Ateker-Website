@@ -47,11 +47,10 @@ const HeroContent = () => {
     <div className="hero">
       <div className="hro-cont">
         <div className="hro-txt">
-          <h1>Smarter cities start with smarter decisions.</h1>
+          <h1>Build Resilient Local Economies. Govern Smarter.</h1>
           <p>
-            Ateker builds the software infrastructure for responsive population
-            centers, where every decision is backed by data, simulation, and
-            intelligence.
+            Empowering communities to act faster, plan better, and build robust
+            local economies with intelligent, human-centered technology.
           </p>
 
           <Link to="/get-notified" className="cta-btn">
@@ -65,10 +64,7 @@ const HeroContent = () => {
           <div className="hero-pulse" style={current.pulsePosition}></div>
 
           {/* Overlay for desktop */}
-          <div
-            className="hero-overlay-glass"
-            style={current.popupPosition}
-          >
+          <div className="hero-overlay-glass" style={current.popupPosition}>
             <div className="overlay-content">
               {current.icon}
               <div>
