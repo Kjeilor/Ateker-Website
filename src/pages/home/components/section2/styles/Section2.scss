@@ -5,20 +5,24 @@
   .container {
     max-width: 70rem;
     margin: 0 auto;
-    gap: 2rem;
-  }
+    gap: 3rem;
 
-  h2 {
-    font-size: 2rem;
-    color: #262626;
-    margin-bottom: 0.5rem;
-  }
+    h2 {
+      font-size: 2rem;
+      color: #262626;
+      margin-bottom: 0.5rem;
+      text-align: center;
+    }
 
-  .section-intro {
-    font-size: 1.5rem;
-    color: #555;
-    margin-bottom: 3rem;
-    max-width: 700px;
+    .section-intro {
+      font-size: 1.5rem;
+      color: #555;
+      margin-bottom: 3rem;
+      max-width: 65rem;
+      text-align: center;
+      margin: auto;
+      padding-bottom: 3rem;
+    }
   }
 
   .data-flow-cards {
