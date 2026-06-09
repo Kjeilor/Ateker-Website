@@ -7,13 +7,13 @@ const CanvasBackground = () => {
 
   useEffect(() => {
     const palette = [
-      "#eeeeee",
+      "#D4AF37",
+      "#D9A2B1",
+      "#8A9A5B",
       "#230520",
-      "#ffbf00",
-      "#574b8b",
-      "#64b9a4",
-      "#29ab87",
-      "#FF69B4",
+      "#5A6B82",
+      "#4C5866",
+      "#28536B",
     ];
 
     const canvas = canvasRef.current;
@@ -59,16 +59,30 @@ const CanvasBackground = () => {
           const cell = grid[y][x];
           if (cell.opacity > 0.01) {
             const rgba = hexToRgba(cell.color || "#eeeeee", cell.opacity);
+            const cx = x * cellSize + cellSize / 2;
+            const cy = y * cellSize + cellSize / 2;
+            const outerRadius = cellSize / 3.2;
+            const innerRadius = outerRadius * 0.5;
+
+            // Draw a donut (ring) by creating an outer arc then an inner reversed arc
+            // Prefer the 'evenodd' fill rule, fall back to compositing if not supported.
             context.beginPath();
-            context.arc(
-              x * cellSize + cellSize / 2,
-              y * cellSize + cellSize / 2,
-              cellSize / 3.2,
-              0,
-              Math.PI * 2
-            );
+            context.arc(cx, cy, outerRadius, 0, Math.PI * 2);
+            context.arc(cx, cy, innerRadius, 0, Math.PI * 2, true);
             context.fillStyle = rgba;
-            context.fill();
+            try {
+              // Modern browsers support the 'evenodd' rule parameter
+              context.fill("evenodd");
+            } catch (e) {
+              // Fallback: draw outer filled then punch a hole with compositing
+              context.fill();
+              context.save();
+              context.globalCompositeOperation = "destination-out";
+              context.beginPath();
+              context.arc(cx, cy, innerRadius, 0, Math.PI * 2);
+              context.fill();
+              context.restore();
+            }
           }
         }
       }

@@ -6,7 +6,14 @@ $junglegreen: #29ab87;
 $magnetite: #135744;
 $glaceite: #808080;
 
-// Font Sizes
+// Font
+$primary-font: Arial, Helvetica, sans-serif;
+body {
+  font-family: $primary-font;
+}
+h1, h2, h3 {
+  font-family: $primary-font;
+}
 $font-sm: 0.875rem;     // ~14px
 $font-med: 1rem;         // ~16px
 $font-lg: 1.25rem;       // ~20px

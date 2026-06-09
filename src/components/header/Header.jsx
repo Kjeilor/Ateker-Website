@@ -1,7 +1,7 @@
 // src/components/header/Header.jsx
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import logo from "../header/assets/Logo.png";
+import logo from "../header/assets/Ateker Logo.png";
 import "./header.scss";
 
 const Header = () => {
@@ -46,7 +46,7 @@ const Header = () => {
       <nav className="nav">
         <div className="logo">
           <Link to="/" aria-label="Home">
-            <img src={logo} alt="Ateker Logo" className="logo__img" />
+            <img src={logo} alt="Ateker" className="logo__img" />
           </Link>
         </div>
 
@@ -64,19 +64,19 @@ const Header = () => {
           </li>
           <li>
             <Link to="/about" className="nav-btn">
-              About
+              Research
             </Link>
           </li>
           <li>
             <Link to="/newsroom" className="nav-btn">
-              Newsroom
+              Company
             </Link>
           </li>
         </ul>
 
         <div className="cta hide-for-mobile">
           <Link className="fb-cta" to="/get-NOTIFIED">
-            Get Notified
+            Request Demo
           </Link>
         </div>
 

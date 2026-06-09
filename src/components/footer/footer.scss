@@ -21,10 +21,11 @@
     max-width: 300px;
 
     .footer-logo {
-      font-size: 1.75rem;
-      font-weight: 700;
-      color: #fff;
-      text-decoration: none;
+      .footer-logo__img {
+        height: 35px;
+        width: auto;
+        display: block;
+      }
     }
 
     .footer-tagline {
