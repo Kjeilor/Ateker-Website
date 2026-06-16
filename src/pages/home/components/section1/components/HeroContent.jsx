@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { BarChart3, ScanLine, Users } from "lucide-react";
+import { BarChart3, ScanLine, Users, ArrowRight } from "lucide-react";
 import testImage from "../../../../../assets/Home/HeroImage.png";
 import "./styles/HeroContent.scss";
 
@@ -47,15 +47,21 @@ const HeroContent = () => {
     <div className="hero">
       <div className="hro-cont">
         <div className="hro-txt">
-          <h1>Build Resilient Local Economies. Govern Smarter.</h1>
+          <h1>Intelligence infrastructure for responsive institutions</h1>
           <p>
-            Empowering communities to act faster, plan better, and build robust
-            local economies with intelligent, human-centered technology.
+            Modern institutions exist in complex environments. Ateker builds the
+            infrastructure that simplifies them.
           </p>
 
-          <Link to="/get-notified" className="cta-btn">
-            Get Notified
-          </Link>
+          <div className="cta-buttons">
+            <a href="#products" className="cta-btn cta-primary">
+              What We Build
+            </a>
+            <Link to="/Sudo-Canary" className="cta-btn cta-secondary">
+              Sudo Canary
+              <ArrowRight size={18} />
+            </Link>
+          </div>
         </div>
 
         <div className="hro-img">

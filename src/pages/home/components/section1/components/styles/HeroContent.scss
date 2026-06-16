@@ -2,6 +2,7 @@
 
 .hero {
   padding: 5rem 2rem 3rem;
+  background-color: rgba(255, 255, 255, 0.8);
 
   .hro-cont {
     display: flex;
@@ -15,12 +16,12 @@
   }
 
   .hro-txt {
-    flex: 1 1 420px;
-    padding: 1rem;
-    background-color: rgba(255, 255, 255, 0.5);
+    flex: 1 1 30rem;
+    padding: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.8);
 
     h1 {
-      font-size: 3rem;
+      font-size: 2.25rem;
       color: $graphite;
       margin-bottom: 1rem;
     }
@@ -32,17 +33,54 @@
       max-width: 600px;
     }
 
+    .cta-buttons {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
     .cta-btn {
-      background-color: $graphite;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
       color: $white;
+      text-decoration: none;
       font-weight: 600;
       padding: 0.75rem 1.5rem;
       border-radius: 2rem;
-      text-decoration: none;
-      display: inline-block;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      font-size: 1rem;
+      height: 2rem;
+      white-space: nowrap;
+    }
+
+    .cta-primary {
+      background-color: $graphite;
 
       &:hover {
         background-color: $junglegreen;
+      }
+    }
+
+    .cta-secondary {
+      background-color: $graphite;
+      color: $white;
+
+      &:hover {
+        background-color: yellow;
+        color: $graphite;
+      }
+
+      svg {
+        transition: transform 0.3s ease;
+      }
+
+      &:hover svg {
+        transform: translateX(4px);
       }
     }
   }
@@ -55,7 +93,7 @@
 
     img {
       width: 100%;
-      border-radius: 1rem;
+      border-radius: 0.5rem;
       object-fit: cover;
     }
 

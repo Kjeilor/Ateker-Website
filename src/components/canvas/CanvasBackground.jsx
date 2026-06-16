@@ -7,13 +7,13 @@ const CanvasBackground = () => {
 
   useEffect(() => {
     const palette = [
-      "#D4AF37",
-      "#D9A2B1",
-      "#8A9A5B",
-      "#230520",
-      "#5A6B82",
-      "#4C5866",
-      "#28536B",
+      "#D4AF3720",
+      "#D9A2B120",
+      "#8A9A5B20",
+      "#23052020",
+      "#5A6B8220",
+      "#4C586620",
+      "#28536B20",
     ];
 
     const canvas = canvasRef.current;
@@ -130,7 +130,7 @@ const CanvasBackground = () => {
         })
       );
 
-      if (frameCount % 15 === 0) {
+      if (frameCount % 30 === 0) {
         grid = getNextGen(grid);
       }
 
